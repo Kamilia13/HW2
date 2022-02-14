@@ -1,0 +1,101 @@
+footer {
+  display: flex;
+  align-items: center;
+  height: 180px;
+  color: white;
+  background: url("../images/bg-masthead.jpg");
+  background-size: cover;
+  background-position: 50% 45%;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.2;
+  }
+
+  .footer{
+    max-width: 60%;
+    margin: auto;
+    z-index: 1;
+
+    h1{
+      padding-bottom: 15px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+  }
+}
+
+footer .footer-bottom{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  
+
+  p{
+    max-width: 300px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: gray;
+    background: white;
+    height: 25px;
+    width: 500px;
+    border-radius: 3px;
+    margin-right: 5px;
+  
+  }
+
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    max-width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background:  #007bff ;
+    color: white;
+    
+    &:hover{
+      cursor: pointer;
+      background: none;
+      color: white;
+      border: 1px solid white;
+    }
+
+  }
+
+}
+
+@media (max-width: 600px){
+  footer .footer-bottom{
+    text-align: justify;
+    flex-direction: column;
+  }
+  h1{
+    max-width: 100%;
+  }
+
+  p {
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-right: none;
+  }
+  button{
+    max-width: 100%;
+  
+  }
+  
+}
+

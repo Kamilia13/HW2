@@ -1,0 +1,31 @@
+@media (max-width: 600px){
+  header .content-bottom{
+    text-align: justify;
+    flex-direction: column;
+  }
+  h1{
+    max-width: 100%;
+  
+  }
+
+  p {
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-right: none;
+  }
+  button{
+    max-width: 100%;
+  
+  }
+  
+.container .content-under div{
+    width: 100%;
+    
+    p{
+      text-align: center;
+      width: 40%;
+      margin-left: 30%;
+    }
+  }
+}
+
